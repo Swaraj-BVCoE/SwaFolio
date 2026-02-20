@@ -1,0 +1,85 @@
+*
+{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+nav
+{
+    display:flex;
+    /* justify-content: space-between; */
+    gap:50px;
+    justify-items: center;
+    padding:20px 30px;
+    background-color: #222;
+    color:white;
+     border-bottom: 2px solid #333; 
+}
+
+nav ui 
+{
+    display:flex;
+    gap:20px;
+    list-style: none;
+    padding:6px;
+}
+nav a
+{
+    text-decoration: none;
+    color:white;
+}
+.searchbox
+{
+    display:flex;
+    align-items: center;
+    margin-left: auto;
+    gap:10px;
+}
+nav input 
+{
+    border: 1px solid #414341;
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+}
+
+main
+{
+    background-color: black;
+    height:70vh;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap:80px;
+    padding:40px;
+}
+
+.left img 
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: none;  /* remove border */
+    box-shadow: 0 0 25px rgba(214, 200, 200, 0.1);
+}
+
+.right
+{
+    color: white;
+}
+
+.slide-heading {
+    opacity: 0;                     /* start invisible */
+    transform: translateX(-100px);  /* start from left */
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;                 /* become visible */
+        transform: translateX(0);   /* move to normal position */
+    }
+}
